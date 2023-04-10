@@ -1,0 +1,194 @@
+body {
+    margin:0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+main {
+    padding-top: 200px;
+    padding-bottom:200px;
+}
+
+header{
+    background-color: #afebd5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    padding-top: 50px;
+}
+
+#navigatiebalk{
+    padding-right: 100px;
+    display: flex;
+    justify-content: right;
+    gap:1em;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffffe8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(126, 119, 119);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{background-color: rgb(0, 0, 0); color:rgb(255, 255, 255)}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin:0 0 3px 5px;
+}
+
+
+.dropdown:hover .dropdown-button{
+    color:rgb(255, 115, 0);
+    transition: 0.2s;
+    box-shadow: inset 0px 3px 0px rgb(255, 115, 0), inset 0px -3px 0px rgb(255, 115, 0);
+}
+    
+.dropdown:hover .down{transform: rotate(225deg); border-color: rgb(255, 115, 0);}
+
+.selected{
+    color:rgb(255, 115, 0);
+    box-shadow: inset 0px 3px 0px rgb(255, 115, 0), inset 0px -3px 0px rgb(255, 115, 0);
+}
+
+.selected .down{
+    border: solid rgb(255, 115, 0);
+    border-width: 0 3px 3px 0;
+}
+
+#selected-dropdown{
+    background-color: black;
+    color: white;
+}
+
+form{
+    display:flex;
+    width:400px;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: blue;
+    border-width: 7px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.element-opmaak{
+    width:85%;
+    padding:20px 0px 20px 0px;
+}
+
+.element-opmaak input{
+    border:none;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+form h2{
+    color:blue
+}
+
+#submit_button{
+    background-color: orange;
+    width: 300px;
+    height: 50px;
+    border:hidden;
+    border-radius: 50px;
+    margin:10px;
+    color: white;
+}
+
+#submit_button :hover{
+    cursor: pointer;
+}
+
+#opmaak-form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    width: 800px;
+}
+
+.dropdown :hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1040px) {
+    #navigatiebalk {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+    }
+    header{
+        width:600px;
+        position:relative;
+    }
+    #titel{
+        width:60%;
+        padding-top: 10px;
+    }
+
+    #titel-case{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #opmaak-form{
+        width:600px;
+    }
+
+    main {
+        padding-top:0;
+    }
+    
+}

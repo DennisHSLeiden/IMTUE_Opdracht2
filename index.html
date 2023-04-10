@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Reservering Glamping la mirande</title>
+</head>
+<body>
+    <main>
+        <header>
+            <section id="titel-case">
+                <h1 id="titel"> Glamping La Mirande, een droomplek in zuid Frankrijk</h1>
+            </section>
+            <nav id="navigatiebalk" role="menubar">
+                <section class="dropdown">
+                    <button class="dropdown-button">Home</button>
+                </section>
+                <section class="dropdown" role="group" aria-owns="submenu">
+                    <button class="dropdown-button">Accommodaties <i class="arrow down"></i></button>
+                    <section class="dropdown-content" role="menu" id="submenu">
+                        <a href="" role="menuitem">Safaritent</a>
+                        <a href="" role="menuitem">Gîte/Vakantiewoning</a>
+                    </section>
+                </section>
+                <section class="dropdown" role="group" aria-owns="submenu">
+                    <button class="dropdown-button selected">Beschikbaarheid <i class="arrow down"></i></button>
+                    <section class="dropdown-content" role="menu" id="submenu">
+                        <a href="" role="menuitem">Beschikbaarheid</a>
+                        <a href="" role="menuitem">Prijzen</a>
+                        <a id="selected-dropdown" href="">Reserveren</a>
+                    </section>
+                </section>
+                <section class="dropdown" role="group" aria-owns="submenu">
+                    <button class="dropdown-button">Omgeving <i class="arrow down"></i></button>
+                    <section class="dropdown-content" role="menu" id="submenu">
+                        <a href="" role="menuitem">Onze omgeving</a>
+                        <a href="" role="menuitem">Cultuur en kastelen</a>
+                        <a href="" role="menuitem">Tuinen</a>
+                        <a href="" role="menuitem">Wellness en golfen</a>
+                        <a href="" role="menuitem">Bordeaux</a>
+                    </section>
+                </section>
+                <section class="dropdown">
+                    <button class="dropdown-button">Contact</button>
+                </section>
+                <section class="dropdown" role="group" aria-owns="submenu">
+                    <button class="dropdown-button">Faq/vragen <i class="arrow down"></i></button>
+                    <section class="dropdown-content" role="menu" id="submenu">
+                        <a href="" role="menuitem">Vragen en Antwoorden</a>
+                        <a href="" role="menuitem">Reviews</a>
+                        <a href="" role="menuitem">Over ons</a>
+                        <a href="" role="menuitem">Corona proof</a>
+                    </section>
+                </section>
+                <section class="dropdown" role="group" aria-owns="submenu">
+                    <button class="dropdown-button">Info <i class="arrow down"></i></button>
+                    <section class="dropdown-content" role="menu" id="submenu">
+                        <a href="" role="menuitem">Info Blogs</a>
+                        <a href="" role="menuitem">Routes</a>
+                        <a href="" role="menuitem">Onze Moestuin</a>
+                        <a href="" role="menuitem">Info Corona</a>
+                    </section>
+                </section>
+            </nav>
+        </header>
+        <section id="opmaak-form">
+            <form action="submit">
+                <h2><i>Reservering/Info La Miranda</i></h2>
+
+                <section class="element-opmaak">
+                    <label for="voornaam">Voornaam</label><br>
+                    <input type="text" id="voornaam" name="voornaam" maxlength="40" aria-required="true" placeholder="Henk"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="tussenvoegsel">Tussenvoegsel</label><br>
+                    <input type="text" id="tussenvoegsel" name="tussenvoegsel" maxlength="10" placeholder="van"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="achternaam">Achternaam</label><br>
+                    <input type="text" id="achternaam" name="achternaam" maxlength="40" aria-required="true" placeholder="Janssen"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="geslacht">Geslacht</label><br>
+                    <input type="text" id="geslacht" name="geslacht" maxlength="10" placeholder="non-binair"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="straat">Straat</label><br>
+                    <input type="text" id="straat" name="straat" maxlength="40" aria-required="true" placeholder="Kalverstraat"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="huisnummer">Huisnummer</label><br>
+                    <input type="text" id="huisnummer" name="huisnummer" maxlength="10" aria-required="true" placeholder="54"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="postcode">Postcode</label><br>
+                    <input type="text" id="postcode" name="postcode" maxlength="8" aria-required="true" placeholder="1234AB"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="woonplaats">Woonplaats</label><br>
+                    <input type="text" id="woonplaats" name="woonplaats" maxlength="40" aria-required="true" placeholder="Amsterdam"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="telefoonnummer">Telefoonnummer</label><br>
+                    <input type="text" id="telefoonnummer" name="telefoonnummer" maxlength="12" aria-required="true" placeholder="06 123456789"><br>
+                    <!-- Waarom moet de telefoonnummer type text zijn, en niet tel? -->
+                </section>
+                <section class="element-opmaak">
+                    <label for="emailadres">Emailadres</label><br>
+                    <input type="text" id="emailadres" name="emailadres" maxlength="50" aria-required="true" placeholder="HenkVJanssen@gmail.com"><br> 
+                    <!-- Waarom moet de email type text zijn, en niet email? -->
+                </section>
+                <section class="element-opmaak">
+                    <label for="volwassenen">Aantal volwassenen</label><br>
+                    <input type="number" id="volwassenen" name="volwassenen" max="999" aria-required="true"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="kinderen">Aantal kinderen</label><br>
+                    <input type="number" id="kinderen" name="kinderen" max="999" aria-required="true"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="huisdieren"></label>Huisdieren <br>(deze zijn eigenlijk niet toegestaan maar moet het voor de opdracht doen)</label><br>
+                    <input type="number" id="huisdieren" name="huisdieren" max="999"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="auto">Auto</label><br>
+                    <input type="number" id="auto" name="auto" max="999"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="kenteken">Kenteken</label><br>
+                    <input type="text" id="kenteken" name="kenteken" maxlength="10" placeholder="12 34 GK"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="aankomstdatum">Aankomstdatum</label><br>
+                    <input type="date" id="aankomstdatum" name="aankomstdatum" maxlength="10" aria-required="true"><br>
+                </section>
+                <section class="element-opmaak">
+                    <label for="vertrekdatum">Vertrekdatum</label><br>
+                    <input type="date" id="vertrekdatum" name="vertrekdatum" maxlength="10" aria-required="true"><br>
+                </section>
+                <section  class=>
+                    <h3>Camping plek grootte</h3>
+                    <label for="klein">klein</label>
+                    <input type="radio" name="soortCampingPlek" value="klein">
+                    <label for="medium">medium</label>
+                    <input type="radio" name="soortCampingPlek" value="medium">
+                    <label for="groot">groot</label>
+                    <input type="radio" name="soortCampingPlek" value="groot">
+                    <label for="humongous">humongous</label>
+                    <input type="radio" name="soortCampingPlek" value="humongous">
+                </section>
+                <section>
+                    <h3>Elektriciteit?</h3>
+                    <input type="radio" name="elektriciteit" value="ja">
+                    <label for="ja">Ja</label>
+                    <input type="radio" name="elektriciteit" value="nee">
+                    <label for="nee">Nee</label>
+                </section>
+                <section>
+                    <h3>Stromend water?</h3>
+                    <input type="radio" name="stromend water" value="ja">
+                    <label for="ja">Ja</label>
+                    <input type="radio" name="stromend water" value="nee">
+                    <label for="nee">Nee</label>
+                </section>
+                <section>
+                    <h3> Andere Interesses?</h3>
+                    <input type="checkbox" id="zwembad" name="zwembad" value="zwembad">
+                    <label for="zwembad">Zwembad</label><br>
+                    <input type="checkbox" id="glijbaan" name="glijbaan" value="glijbaan">
+                    <label for="glijbaan">Glijbaan</label><br>
+                    <input type="checkbox" id="sauna" name="sauna" value="sauna">
+                    <label for="sauna">Sauna</label><br>
+                    <input type="checkbox" id="sportcentrum" name="sportcentrum" value="sportcentrum">
+                    <label for="sportcentrum">Sportcentrum</label><br>
+                    <input type="checkbox" id="elektrische_fietsen" name="elektrische_fietsen" value="elektrische_fietsen">
+                    <label for="elektrische_fietsen">Elektrische fietsen</label><br>
+                    <input type="checkbox" id="toilet" name="toilet" value="toilet">
+                    <label for="toilet">Toilet</label><br>
+                    <input type="checkbox" id="douche" name="douche" value="douche">
+                    <label for="douche">Douche</label><br>
+                    <input type="checkbox" id="persoonlijke_massage_persoon" name="persoonlijke_massage_persoon" value="persoonlijke_massage_persoon">
+                    <label for="persoonlijke_massage_persoon">Persoonlijke massage</label><br>
+                </section>
+                <input id="submit_button" type="submit" value="Verstuur">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
